@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RunTempo</string>
+    <string name="desired_pace">DESIRED PACE (km/h)</string>
+    <string name="pace_entry">PACE GOES HERE</string>
+    <string name="choose_song">Choose Song</string>
+    <string name="song_entry">SONG GOES HERE</string>
+    <string name="pause_song"></string>
+    <string name="resume_song"></string>
+    <string name="start_run">START RUN</string>
+    <string name="current_pace">CURRENT PACE (km/h)</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/song_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="22dp"
+        android:onClick="onClick"
+        android:shadowColor="@color/black"
+        android:shadowRadius="50"
+        android:text="@string/choose_song"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desired_pace_textview" />
+
+    <TextView
+        android:id="@+id/song_textview"
+        android:layout_width="115dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#9C27B0"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/black"
+        android:shadowRadius="30"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desired_pace_edittext" />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@android:drawable/ic_media_pause"
+        android:onClick="pause"
+        android:text="@string/pause_song"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startrun_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="100dp"
+        android:onClick="play"
+        android:shadowColor="@color/black"
+        android:shadowRadius="50"
+        android:text="@string/start_run"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/desired_pace_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/desired_pace"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_pace_textview" />
+
+    <EditText
+        android:id="@+id/desired_pace_edittext"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#9C27B0"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:shadowColor="@color/black"
+        android:shadowRadius="30"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pace_textview" />
+
+    <TextView
+        android:id="@+id/current_pace_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/current_pace"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startrun_button" />
+
+    <TextView
+        android:id="@+id/pace_textview"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#9C27B0"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowRadius="30"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
