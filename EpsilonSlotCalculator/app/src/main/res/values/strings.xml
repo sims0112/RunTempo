@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Epsilon Slot Calculator</string>
-    <string name="button_send">Enter</string>
-    <string name="edit_total">Input sorcery point total</string>
-    <string name="edit_1st">Input min. 1st</string>
-    <string name="edit_2nd">Input min. 2nd</string>
-    <string name="edit_3rd">Input min. 3rd</string>
-    <string name="edit_4th">Input min. 4th</string>
-</resources>
